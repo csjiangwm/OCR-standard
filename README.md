@@ -40,7 +40,7 @@ CRNN result<br>
 DenseNet result<br>
 ![](https://github.com/csjiangwm/OCR-standard/blob/master/images/densenet.png) <br>
 
-It can be seen that the method can achieve a good performance in Chinese character recognition, but achieve a bad performance in numeric character and English character. Training data is the main reason to this result. So you may want to train your own model.
+It can be seen that the method can achieve a good performance in Chinese character recognition, but achieve a bad performance in numeric character and English character. Training data is the main reason for this result. So you may want to train your own model.
 
 
 ## Train CTPN
