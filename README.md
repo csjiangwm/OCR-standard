@@ -19,26 +19,26 @@ If you want to detect the text direction and rotate your image, you should downl
 
 ```Bash
 python ctpn_crnn.py --CTPN_MODEL your_ctpn_path \
-					--CRNN_MODEL your_crnn_path \
-					--VGG_MODEL your_vgg_path \
-					--ADJUST_ANGLE your_choice
+		    --CRNN_MODEL your_crnn_path \
+		    --VGG_MODEL your_vgg_path \
+		    --ADJUST_ANGLE your_choice
 ```
 Or
 ```Bash
 python ctpn_densenet.py --CTPN_MODEL your_ctpn_path \
-					    --DENSE_MODEL your_densenet_path \
-					    --VGG_MODEL your_vgg_path \
-					    --ADJUST_ANGLE your_choice
+			--DENSE_MODEL your_densenet_path \
+			--VGG_MODEL your_vgg_path \
+			--ADJUST_ANGLE your_choice
 ```
 
-##Some results
-![](https://github.com/csjiangwm/OCR-standard/blob/master/images/timg.jpg)
-Detected result
-![](https://github.com/csjiangwm/OCR-standard/blob/master/images/result.jpg)
-CRNN result
-![](https://github.com/csjiangwm/OCR-standard/blob/master/images/crnn.png)
-DenseNet result
-![](https://github.com/csjiangwm/OCR-standard/blob/master/images/densenet.png) 
+## Some results
+![](https://github.com/csjiangwm/OCR-standard/blob/master/images/timg.jpg)<br>
+Detected result<br>
+![](https://github.com/csjiangwm/OCR-standard/blob/master/images/result.jpg)<br>
+CRNN result<br>
+![](https://github.com/csjiangwm/OCR-standard/blob/master/images/crnn.png)<br>
+DenseNet result<br>
+![](https://github.com/csjiangwm/OCR-standard/blob/master/images/densenet.png) <br>
 
 It can be seen that the method can achieve a good performance in Chinese character recognition, but achieve a bad performance in numeric character and English character. Training data is the main reason to this result. So you may want to train your own model.
 
@@ -49,9 +49,9 @@ Download the pretrained CTPN model from [BaiduyunDisk](https://pan.baidu.com/s/1
 
 ```Bash
 python CTPN_train.py --PRETRAINED_MODEL your_path \
-					 --DATA_DIR your_data_path \
-					 --SAVED_PATH the_path_you_want_to_save_your_model \
-					 --CTPN_LOGGER your_logger_path
+		     --DATA_DIR your_data_path \
+		     --SAVED_PATH the_path_you_want_to_save_your_model \
+		     --CTPN_LOGGER your_logger_path
 ```
 
 ## Train DenseNet
@@ -60,9 +60,9 @@ Download the training dataset from [BaiduyunDisk](https://pan.baidu.com/s/1IRdf7
 
 ```Bash
 python CTPN_train.py --PRETRAINED_MODEL your_path \
-					 --DATA_DIR your_data_path \
-					 --SAVED_PATH the_path_you_want_to_save_your_model \
-					 --CTPN_LOGGER your_logger_path
+		     --DATA_DIR your_data_path \
+		     --SAVED_PATH the_path_you_want_to_save_your_model \
+		     --CTPN_LOGGER your_logger_path
 ```
 
 
