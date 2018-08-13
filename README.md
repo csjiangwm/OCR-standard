@@ -13,9 +13,9 @@ chmod +x make.sh
 
 ## Test
 Download the CTPN model from [BaiduyunDisk](https://pan.baidu.com/s/1CGwxKrJr5gtznGtM05Y4HA) with extract code: "48j2"<br>
-Download the CRNN model from from [BaiduyunDisk](https://pan.baidu.com/s/1wTM-mBX0Beg-xkLZuhLwog) with extract code: "2yww"<br>
-Or download the DenseNet model from from [BaiduyunDisk](https://pan.baidu.com/s/1qUJ4NNY2tKGE0ll_QGuGXA) with extract code: "uafx"<br>
-If you want to detect the text direction and rotate your image, you should download the VGG model from from [BaiduyunDisk](https://pan.baidu.com/s/1L14LJYmkU37S-aAXl06CAg) with extract code: "ass4". Note that this VGG model can only detect 0, 90, 180, 270 degrees.<br>
+Download the CRNN model from [BaiduyunDisk](https://pan.baidu.com/s/1wTM-mBX0Beg-xkLZuhLwog) with extract code: "2yww"<br>
+Or download the DenseNet model from [BaiduyunDisk](https://pan.baidu.com/s/1qUJ4NNY2tKGE0ll_QGuGXA) with extract code: "uafx"<br>
+If you want to detect the text direction and rotate your image, you should download the VGG model from [BaiduyunDisk](https://pan.baidu.com/s/1L14LJYmkU37S-aAXl06CAg) with extract code: "ass4". Note that this VGG model can only detect 0, 90, 180, 270 degrees.<br>
 
 ```Bash
 python ctpn_crnn.py --CTPN_MODEL your_ctpn_path \
@@ -26,7 +26,7 @@ python ctpn_crnn.py --CTPN_MODEL your_ctpn_path \
 Or
 ```Bash
 python ctpn_densenet.py --CTPN_MODEL your_ctpn_path \
-			--DENSE_MODEL your_densenet_path \
+			--DENSENET_MODEL your_densenet_path \
 			--VGG_MODEL your_vgg_path \
 			--ADJUST_ANGLE your_choice
 ```
