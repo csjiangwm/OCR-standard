@@ -133,9 +133,3 @@ class DenseNet:
         out = data.decode_densenet(y_pred)
         return out
         
-# Explaination :
-# 只要定义了entire_model优化过程中就会带入entire_model中所有的层进行优化，无须在意complie中的loss是哪个
-# 如果complie中的loss是self.loss时，保存模型时会将self.loss一起保存，造成的结果就是在测试的时候重新载入
-# 会因为找不到CTC而提示报错
-# 从compile的源码可以找到为什么loss是字典
-# 从keras.losses源码可以找到为什么字典的value是个lambda函数
