@@ -59,7 +59,7 @@ Download the training dataset from [BaiduyunDisk](https://pan.baidu.com/s/1IRdf7
 
 
 ```Bash
-python CTPN_train.py --PRETRAINED_MODEL your_path \
+python DenseNet_train.py --PRETRAINED_MODEL your_path \
 		     --DATA_DIR your_data_path \
 		     --SAVED_PATH the_path_you_want_to_save_your_model \
 		     --CTPN_LOGGER your_logger_path
