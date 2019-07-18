@@ -74,5 +74,3 @@ python DenseNet_train.py --PRETRAINED_MODEL your_path \
 - [pytorch_crnn](https://github.com/meijieru/crnn.pytorch.git)    
 - [tensorflow-ctpn](https://github.com/eragonruan/text-detection-ctpn )
 - [keras-densenet](https://github.com/YCG09/chinese_ocr)
-# end
-## End
